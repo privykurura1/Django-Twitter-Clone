@@ -3,7 +3,7 @@
 {% block content %}
     <div class="row">
         <div class="col-12 col-md-3 pr-4 dont-move">
-            <a href="/"> <h2><img class="img-fluid" width="60" src="{% static 'blog/logo.png' %}">BlogRoom</h2></a><br>
+            <a href="/"> <h2><img class="img-fluid" width="60" src="{% static 'blog/logo.png' %}">ChatRoom</h2></a><br>
             <div class="profile-section">
             <h3 class="white-important p-2">
                 Profile
@@ -93,7 +93,7 @@
                 {% if user_profile is None %}
                 <div style="margin-left: auto; margin-right:auto">
                     <a class="btn btn-sm btn-outline-primary mb-4 mr-3 " href="{% url 'post-create' %}">
-                        Tweet
+                        write
                     </a>
                 </div>
                 {% endif %}
@@ -120,7 +120,7 @@
             <div class="full-width row">
                 <div class="col-6">
                     <h3 class="white-important mb-3">
-                        Tweets
+                        Posts
                     </h3>
                 </div>
                  <div class="col-6 no-padding">
@@ -290,7 +290,7 @@
 <a href="">Cookies</a>,
 <a href="">Ads info</a>,
 <a href="">More</a>
-© 2020 Twitter, Inc.</p>
+© 2022 PriCom, Inc.</p>
 
         </div>
     </div>

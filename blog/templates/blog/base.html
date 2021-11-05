@@ -12,7 +12,7 @@
         <link rel="icon" type="image/png" href="{% static 'blog/logo.png' %}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
-        <title>BlogRoom</title>
+        <title>ChatRoom</title>
     </head>
   <body>
       <header class="site-header">
@@ -27,7 +27,7 @@
             </div>
                         <div class="navbar-nav pr-2">
                 {% if user.is_authenticated %}
-                    <a class="nav-item nav-link" href="{% url 'post-create' %}">Create a Tweet</a>
+                    <a class="nav-item nav-link" href="{% url 'post-create' %}">Create a Post</a>
                     <a class="nav-item nav-link" href="{% url 'profile' %}">Settings</a>
                     <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
                 {% else %}
